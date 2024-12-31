@@ -5,6 +5,7 @@ from .models import Musician
 class MusicianSerializer(serializers.ModelSerializer):
     is_adult = serializers.SerializerMethodField()
 
+# валидации возраста
     class Meta:
         model = Musician
         fields = [
